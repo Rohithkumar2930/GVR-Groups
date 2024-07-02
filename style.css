@@ -182,65 +182,44 @@ video {
     min-height: 10vh;
     display: flex;
     align-items: center;
-    padding: 0 50px;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
     position: relative;
     z-index: 1;
     width: 100%;
-    height: 100px;
+    height: 100%;
     overflow: hidden;
 }
 
-.counter-up {
-    background-color: blue;
-    min-height: 28vh;
-    display: flex;
-    align-items: center;
+.result .counter-up .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 30px 0px;
 }
 
-.counter-up::before {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: rgb(211, 211, 237);
-}
-
-.counter-up .content {
+.result .counter-up .content .box {
+    border: 1px white solid;
+    border-radius: 10px;
     display: flex;
-    width: 100%;
-    height: 100%;
-    align-items: center;
     justify-content: center;
-}
-
-.content .box {
-    margin: 10px;
-    width: calc(50% - 10px);
-    border: 1px solid white;
-    border-radius: 5px;
-    padding: 20px;
-    display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    color: white;
-    /* flex-direction: column; */
-    /* border-radius: 50px; */
+    gap: 10px;
+    width: 100%;
 }
 
-.content .box .counter {
-    font-size: 50px;
-    color: white;
-    font-weight: 500;
-    font-family: sans-serif;
+.result .counter-up .content .box .counter {
+    font-size: 32px;
 }
 
-.content .box .text {
-    color: white;
-    font-weight: 400;
+@media (max-width: 1036px) and (min-width: 650px) {
+    .result .counter-up .content {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 650px) {
+    .result .counter-up .content {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 1036px) {
