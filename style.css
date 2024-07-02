@@ -21,7 +21,7 @@
 /* -----Nav-Bar----- */
 
 .navbar {
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     width: 100%;
     z-index: 1000;
@@ -65,15 +65,38 @@
 
 /* -------Home----- */
 
-.home {
+/* .home {
     background: url(PHOTOS/hotel-automation-streamlines-hospitality-workflow-1240x836.webp);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
+    width: 10px;
+    width: 100%;
     position: relative;
     z-index: 2;
+} */
+
+.home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    /* Optional: to handle overflow if needed */
 }
 
+.background-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensures the image covers the entire container */
+    z-index: -1;
+    /* Ensures the image is behind the content */
+}
+
+/* 
 .home::after {
     content: "";
     width: 100%;
@@ -81,10 +104,10 @@
     position: absolute;
     top: 0;
     left: 0;
-    /* background-color: rgba(27, 21, 142, 0.8); */
+    background-color: rgba(27, 21, 142, 0.8);
     filter: blur(80%);
     z-index: -1;
-}
+} */
 
 
 
@@ -155,8 +178,6 @@ video {
 /* -----counter--- */
 
 .counter-up {
-    background-image: url(PHOTOS/business-process-automation-min.webp);
-    max-width: 100%;
     color: white;
     min-height: 10vh;
     display: flex;
@@ -167,6 +188,9 @@ video {
     background-position: center;
     position: relative;
     z-index: 1;
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
 }
 
 .counter-up {
@@ -225,7 +249,7 @@ video {
     }
 
     .content .box {
-        width: calc(50% - 30px);
+        width: 100%;
         margin-bottom: 50px;
     }
 }
