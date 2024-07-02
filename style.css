@@ -1,0 +1,241 @@
+@import url('https://fonts.google.com/share?selection.family=Nunito:ital,wght@0,200..1000;1,200..1000');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Nunito', sans-serif;
+}
+
+:root {
+    --primary: rgb(60, 60, 90);
+    --dark: #21252f;
+    --body: #080101;
+    --box-shadow: 0 8px 22px rgba(0, 0, 0, .1);
+}
+
+/* -----Nav-Bar----- */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar-brand {
+    font-size: 30px;
+}
+
+.nav-item a {
+    font-size: 17px;
+    font-weight: 700;
+    color: black;
+    margin: .5rem;
+}
+
+.content h1 {
+    padding-bottom: 3%;
+}
+
+.content p {
+    padding-top: -10%;
+}
+
+.btn a {
+    padding-top: 120%;
+}
+
+.btn {
+    padding: 13px 25px;
+    border-width: 2px;
+    border-radius: 0;
+    font-weight: bold;
+    transition: 1s;
+}
+
+.btn:hover {
+    transform: scale(1.2);
+    z-index: 3;
+}
+
+/* -------Home----- */
+
+.home {
+    background: url(PHOTOS/hotel-automation-streamlines-hospitality-workflow-1240x836.webp);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 2;
+}
+
+.home::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background-color: rgba(27, 21, 142, 0.8); */
+    filter: blur(80%);
+    z-index: -1;
+}
+
+
+
+
+/* About section */
+
+/* .about1 video {
+    width: 100%;
+} */
+#about_vidoe {
+    background-color: rgb(2, 2, 13);
+}
+
+video {
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: 100%;
+    /* justify-content: center; */
+}
+
+#abouts2 {
+    padding-top: -10px;
+    width: 100%;
+    height: 100%;
+}
+
+.about-header {
+    margin: 65px;
+    /* margin-top: 120px; */
+    font-weight: 800;
+}
+
+.about-img img {
+    width: 100%;
+    height: 500px;
+}
+
+.about-content {
+    height: 100%;
+    padding-top: 1px;
+    padding-left: 15px;
+}
+
+.about-content p {
+    color: black;
+    margin: 1px;
+}
+
+#btn_about {
+    margin-top: 20px;
+}
+
+.about-img {
+    padding-left: 15px;
+}
+
+.about-h1 {
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding-top: -90%;
+}
+
+.about {
+    padding-bottom: 100px;
+}
+
+/* -----counter--- */
+
+.counter-up {
+    background-image: url(PHOTOS/business-process-automation-min.webp);
+    max-width: 100%;
+    color: white;
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+
+.counter-up {
+    background-color: blue;
+    min-height: 28vh;
+    display: flex;
+    align-items: center;
+}
+
+.counter-up::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgb(211, 211, 237);
+}
+
+.counter-up .content {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.content .box {
+    margin: 10px;
+    width: calc(50% - 10px);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    /* flex-direction: column; */
+    /* border-radius: 50px; */
+}
+
+.content .box .counter {
+    font-size: 50px;
+    color: white;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+
+.content .box .text {
+    color: white;
+    font-weight: 400;
+}
+
+@media (max-width: 1036px) {
+    .counter-up {
+        padding: 50px 50px 0 50px;
+    }
+
+    .content .box {
+        width: calc(50% - 30px);
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 450px) {
+    .result .counter-up {
+        max-width: 100%;
+    }
+
+    .content .box {
+        width: 100%;
+    }
+}
