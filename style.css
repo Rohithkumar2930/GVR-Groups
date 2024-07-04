@@ -261,15 +261,12 @@ p {
     background-color: rgb(237, 237, 237, .1);
     backdrop-filter: blur(10px);
     margin-bottom: 100px;
-
 }
-
 
 /* -------------clients------------------ */
-.clients {
+/* .clients {
     background-color: ;
-}
-
+} */
 .client-header {
     margin: 70px;
 }
@@ -521,6 +518,11 @@ p {
 
 .branch {
     background: white;
+    /* margin-bottom: 10px; */
+}
+
+.media {
+    margin-bottom: 20px;
 }
 
 .media {
