@@ -320,7 +320,7 @@ p {
     background-color: #2a460b;
 } */
 .contact-header {
-    margin-top: -40px;
+    margin-top: 20px;
     margin-bottom: -100%;
 }
 
@@ -477,6 +477,7 @@ p {
 
 #contact1 {
     background: url(PHOTOS/tra16062946893318.jpg);
+    margin-top: 70px;
 }
 
 .contact-section {
@@ -516,9 +517,11 @@ p {
     font-size: 20px;
 }
 
+.branch-header {}
+
 .branch {
     background: white;
-    /* margin-bottom: 10px; */
+    margin-top: 120px;
 }
 
 .media {
@@ -630,6 +633,13 @@ footer {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+}
+
+.container1 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    /* margin-bottom: 300px; */
 }
 
 .photo-grid {
